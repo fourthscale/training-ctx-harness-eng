@@ -8,8 +8,8 @@
 # How it works
 #   1. Snapshot the working tree as a git tree hash (committed or not, tracked or not).
 #   2. Compare it with the snapshot from the last time this hook ran.
-#   3. If front-end files changed in between: block the stop and send Claude back to verify,
-#      with the procedure from verify-front.md (printed here, so Claude cannot miss it).
+#   3. If front-end files changed in between: block the stop and send Claude back to verify
+#      with the `verify-front` skill (.claude/skills/verify-front/SKILL.md).
 #
 # Why a tree hash
 #   Same hash = same files = already checked. Claude is sent back once per change:
@@ -56,8 +56,10 @@ echo "$CURRENT_TREE" > "$STATE_FILE"
 CHANGED="$(git diff --name-only "$PREVIOUS_TREE" "$CURRENT_TREE" -- "${FRONT_PATHS[@]}")"
 [ -z "$CHANGED" ] && exit 0
 
-{
-  printf 'Front-end files changed:\n%s\n\n' "$CHANGED"
-  cat .claude/hooks/verify-front.md
-} >&2
+cat >&2 <<EOF
+Front-end files changed:
+$CHANGED
+
+Run the verify-front skill now: check the change against what was asked, and do every step.
+EOF
 exit 2

@@ -1,7 +1,9 @@
-# Front-end verification
+---
+name: verify-front
+description: Check front-end changes in a browser against what was asked (both locales, mobile width, console, screenshot). Run it when the Stop hook asks for it at the end of the turn, not before, or the check runs twice.
+---
 
-This procedure is run by the Stop hook (`verify-front.sh`) at the end of the turn: do not run it
-on your own before, it would run twice. When the hook prints it, run it now, fully.
+# Front-end verification
 
 Unit tests do not prove a page renders. Check the interface in a browser before saying
 the work is done:
