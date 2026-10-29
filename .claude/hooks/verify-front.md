@@ -1,5 +1,8 @@
 # Front-end verification
 
+This procedure is run by the Stop hook (`verify-front.sh`) at the end of the turn: do not run it
+on your own before, it would run twice. When the hook prints it, run it now, fully.
+
 Unit tests do not prove a page renders. Check the interface in a browser before saying
 the work is done:
 
