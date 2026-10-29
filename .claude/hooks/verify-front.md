@@ -1,15 +1,7 @@
----
-paths:
-  - "src/**/*.tsx"
-  - "src/**/*.css"
-  - "content/**"
-  - "src/i18n/messages/**"
----
-
 # Front-end verification
 
-Unit tests do not prove a page renders. After a change that affects the interface,
-check it in a browser before saying the work is done:
+Unit tests do not prove a page renders. Check the interface in a browser before saying
+the work is done:
 
 - Check against the Docker dev environment (hot reload, no rebuild needed). If it is running
   (`docker compose ps`), use the URL of its published port; otherwise start it with
