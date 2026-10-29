@@ -22,6 +22,7 @@ only the instructions given to the coding agent change.
 | `case-5-stop-hook-limited` | Case 4, plus one sentence in `verify-front.md` telling the agent to wait for the hook, to limit double verification. |
 | `case-6-skill` | The verification procedure becomes a skill (`.claude/skills/verify-front`): the agent only sees its description until it runs it; the Stop hook asks for it, and you can run `/verify-front` yourself. |
 | `case-7-subagent` | The review moves to a subagent (`.claude/agents/front-reviewer.md`) with a fresh context and no write tools; the `verify-front` skill now prepares what it receives (acceptance criteria, the user's request word for word, changed files). The agent saves its screenshots in `tmp/screenshots/` (git-ignored) and the skill shows them to you, so the visual proof outlives the agent's context. |
+| `case-8-plugin` | The team plugin `acme-ft` (from [`training-ctx-harness-eng-plugin`](https://github.com/fourthscale/training-ctx-harness-eng-plugin)) loads the Acme ubiquitous language at session start, shared by every repository that enables it. It also ships writing skills and an output style: see its [README](https://github.com/fourthscale/training-ctx-harness-eng-plugin). |
 
 `main` matches case 1. To see exactly what the richer context adds:
 

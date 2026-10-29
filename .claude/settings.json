@@ -1,4 +1,15 @@
 {
+  "extraKnownMarketplaces": {
+    "acme": {
+      "source": {
+        "source": "github",
+        "repo": "fourthscale/training-ctx-harness-eng-plugin"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "acme-ft@acme": true
+  },
   "hooks": {
     "PreToolUse": [
       {
