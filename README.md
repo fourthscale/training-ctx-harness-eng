@@ -17,6 +17,7 @@ only the instructions given to the coding agent change.
 | --- | --- |
 | `case-1-minimal-agents-md` | Minimal: stack and commands only. |
 | `case-2-full-agents-md` | Complete: purpose of the repo, architecture rules, i18n, naming conventions. |
+| `case-3-claude-rules` | Split: a short `AGENTS.md` plus one file per topic in `.claude/rules/`, path-scoped when a rule only applies to part of the code. |
 
 `main` matches case 1. To see exactly what the richer context adds:
 
