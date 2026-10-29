@@ -1,0 +1,38 @@
+services:
+  # Development environment: `docker compose up`.
+  # The source is mounted into the container, so changes show up without a rebuild.
+  web:
+    build:
+      context: .
+      target: deps
+    command: npm run dev -- --hostname 0.0.0.0
+    env_file:
+      # Local secrets (git-ignored, see .env.example); optional so a fresh clone still starts.
+      - path: .env
+        required: false
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      # Keep the container's own node_modules and build cache, not the host's.
+      - /app/node_modules
+      - /app/.next
+
+  # Production image: `docker compose up --build prod` (tests run during the build).
+  prod:
+    profiles: ["prod"]
+    build: .
+    image: training-ctx-harness-eng
+    env_file:
+      # Secrets are passed at run time, never baked into the image (see .dockerignore).
+      - path: .env
+        required: false
+    ports:
+      - "3000:3000"
+    volumes:
+      # Only runtime data (subscribers.json) lives in the volume;
+      # content/ comes from the image, so a rebuild updates it.
+      - data:/app/data
+
+volumes:
+  data:

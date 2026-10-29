@@ -1,0 +1,77 @@
+{
+  "brand": "Acme",
+  "hero": {
+    "eyebrow": "Hands-on training for development teams",
+    "title": "Context & Harness Engineering",
+    "subtitle": "Your developers already use a coding agent such as Claude Code. Move from ad-hoc use to a team-wide agentic layer, and learn to delegate while staying in control of the outcome.",
+    "ctaLabel": "Get in touch"
+  },
+  "features": [
+    {
+      "icon": "🧠",
+      "title": "Controlled context",
+      "description": "What the agent knows is chosen, not endured: context window, pitfalls to avoid, management commands."
+    },
+    {
+      "icon": "🧩",
+      "title": "Shared building blocks",
+      "description": "Skills, subagents and plugins distributed across every repository of the team."
+    },
+    {
+      "icon": "✅",
+      "title": "Automated checks",
+      "description": "Measurable success criteria and verification loops that tell the agent whether it succeeded."
+    },
+    {
+      "icon": "🎯",
+      "title": "Delegate without losing control",
+      "description": "Permissions, sandbox and scoping: the agent moves forward, you stay in charge of the result."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Context",
+      "tagline": "What the agent knows.",
+      "topics": [
+        "Overview and demystification: agent, subagent, orchestration, harness",
+        "The context window: anatomy, limits, pitfalls (poisoning, confusion, clash, distraction), management commands",
+        "Introduction to the building blocks: hooks, skills, subagents, plugins"
+      ]
+    },
+    {
+      "title": "Building blocks",
+      "tagline": "What the agent can do.",
+      "topics": [
+        "Hooks, skills, commands, subagents: anatomy, triggering, best practices",
+        "Plugin: a single source distributed to every repository",
+        "Workflows: Research → Plan → Implement, measurable success criteria, verification loops"
+      ]
+    },
+    {
+      "title": "Practice",
+      "tagline": "The team works on its own needs, with guidance.",
+      "topics": [
+        "Protect: permissions, sandbox (empirical demo)",
+        "Parallelization: worktrees, subagents in fan-out and pipeline",
+        "Scoping: one need, one outcome, one exit criterion per group",
+        "Guided practice and unblocking clinic",
+        "Team playbook",
+        "30-day adoption plan"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "title": "Short theory",
+      "description": "Just enough to set the key concepts."
+    },
+    {
+      "title": "Workshops in pairs or mob",
+      "description": "On the team's own repositories, not a toy project."
+    },
+    {
+      "title": "Practice between sessions",
+      "description": "The team applies it to real work before the next session."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "brand": "Acme",
+  "hero": {
+    "eyebrow": "Formation pratique pour équipes de développement",
+    "title": "Context & Harness Engineering",
+    "subtitle": "Vos développeurs utilisent déjà un agent de code comme Claude Code. Passez d'un usage au fil de l'eau à une couche agentique d'équipe, et apprenez à déléguer en restant maître du résultat.",
+    "ctaLabel": "Être recontacté"
+  },
+  "features": [
+    {
+      "icon": "🧠",
+      "title": "Un contexte maîtrisé",
+      "description": "Ce que l'agent sait est choisi, pas subi : fenêtre de contexte, pièges à éviter, commandes de gestion."
+    },
+    {
+      "icon": "🧩",
+      "title": "Des briques partagées",
+      "description": "Skills, sous-agents et plugins distribués dans tous les dépôts de l'équipe."
+    },
+    {
+      "icon": "✅",
+      "title": "Des vérifications automatiques",
+      "description": "Conditions de succès mesurables et boucles de vérification qui disent à l'agent s'il a réussi."
+    },
+    {
+      "icon": "🎯",
+      "title": "Déléguer sans perdre la main",
+      "description": "Permissions, sandbox et cadrage : l'agent avance, vous restez maître du résultat."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Le contexte",
+      "tagline": "Ce que l'agent sait.",
+      "topics": [
+        "Panorama et démystification : agent, sous-agent, orchestration, harnais",
+        "La fenêtre de contexte : anatomie, limites, pièges (poisoning, confusion, clash, distraction), commandes de gestion",
+        "Introduction aux briques : hooks, skills, sous-agents, plugins"
+      ]
+    },
+    {
+      "title": "Les briques",
+      "tagline": "Ce que l'agent sait faire.",
+      "topics": [
+        "Hooks, skills, commands, sous-agents : anatomie, déclenchement, bonnes pratiques",
+        "Plugin : une source unique distribuée dans tous les dépôts",
+        "Workflows : Research → Plan → Implement, condition de succès mesurable, boucles de vérification"
+      ]
+    },
+    {
+      "title": "La pratique",
+      "tagline": "L'équipe travaille sur ses besoins, accompagnée.",
+      "topics": [
+        "Protéger : permission, sandbox (démo empirique)",
+        "Parallélisation : worktrees, sous-agents en fan-out et en pipeline",
+        "Cadrage : un besoin, un résultat, une condition de fin par groupe",
+        "Pratique encadrée et clinique des blocages",
+        "Playbook d'équipe",
+        "Plan d'adoption à 30 jours"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "title": "Théorie courte",
+      "description": "Juste ce qu'il faut pour poser les notions clés."
+    },
+    {
+      "title": "Ateliers en paires ou en mob",
+      "description": "Sur les dépôts de l'équipe, pas sur un projet jouet."
+    },
+    {
+      "title": "Pratique entre les sessions",
+      "description": "L'équipe applique sur ses vrais sujets avant la session suivante."
+    }
+  ]
+}

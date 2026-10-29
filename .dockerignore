@@ -1,0 +1,9 @@
+node_modules
+.next
+coverage
+.git
+*.md
+data/subscribers.json
+.env*
+Dockerfile
+docker-compose.yml

@@ -1,0 +1,33 @@
+{
+  "name": "training-ctx-harness-eng",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Training repo for the Context & Harness Engineering course: a Next.js landing page built with DDD and SOLID.",
+  "author": "Ludovic Raymond <ludovic.raymond@fourthscale.com>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "30.0.0",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "jest": "30.5.2",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

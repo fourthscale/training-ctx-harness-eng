@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.swc/
+out/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+# Local secrets: copy .env.example to .env
+.env*
+!.env.example
+.DS_Store
+
+# Data written at runtime
+data/subscribers.json
