@@ -12,3 +12,6 @@ next-env.d.ts
 
 # Data written at runtime
 data/subscribers.json
+
+# Screenshots of the front-reviewer agent
+tmp/

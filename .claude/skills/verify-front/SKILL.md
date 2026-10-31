@@ -24,7 +24,9 @@ It only knows what you send it, so prepare the message carefully.
    - …
    ```
 
-5. Read the verdict:
+5. Show the user the screenshots listed in the verdict (send the files if your tools can,
+   otherwise give their paths). They are the visual proof: the agent's own context is gone.
+6. Read the verdict:
    - `PASS`: report it to the user, criterion by criterion.
    - `FAIL`: fix what failed, then finish your turn; the Stop hook will ask for a new review.
    - Missing context: send the message again, complete.
